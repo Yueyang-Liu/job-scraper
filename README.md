@@ -50,7 +50,7 @@ Before running the script, you need to configure the variables at the top of `jo
     * `JOB_KEY_COLUMN`: The header name for the internal key used for deduplication (you likely don't need to change this unless it conflicts, e.g., `'DescriptiveKey'`). This column is used during processing but removed from the final output file.
 * **Scraping Behavior:**
     * `SLEEP_DURATION_SEC`: Time in seconds to pause between processing each target URL. Helps avoid overwhelming servers (e.g., `1`).
-    * `BROWSER_TIMEOUT`: Maximum time in milliseconds Playwright will wait for page navigation or certain actions before timing out (e.g., `3000` for 60 seconds).
+    * `BROWSER_TIMEOUT`: Maximum time in milliseconds Playwright will wait for page navigation or certain actions before timing out (e.g., `3000` for 3 seconds).
     * `FALLBACK_JS_RENDER_WAIT_SEC`: **Crucial:** The fixed time in seconds the script waits *after* the initial page load (`domcontentloaded`) before grabbing the page content. This allows time for JavaScript to execute and render dynamic content. **This is the primary wait mechanism.** If jobs are missed, you may need to *increase* this value (e.g., to `10`, `15` or more), but this will slow down the script.
 * **Location Filtering:**
     * `ALLOWED_LOCATION_KEYWORDS`: A Python `set` of lowercase keywords. If any of these are found in a job's URL or link text, the job is **kept** (it passes the filter). Prioritize adding specific US/HK cities and common abbreviations here.
