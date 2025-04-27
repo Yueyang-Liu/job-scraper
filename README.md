@@ -2,7 +2,7 @@
 
 **1. Prerequisites**
 
-* If you don't have Python installed, download and install it from [python.org](https://www.python.org/).
+* Download and install Python and Visual Studio Code.
 * Open your terminal or command prompt and run:
     ```
     pip install pandas openpyxl playwright beautifulsoup4 lxml
