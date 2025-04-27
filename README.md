@@ -21,7 +21,7 @@
 **3. Run the Code**
 
 1.  Save the code above as a Python file (e.g., `job_scraper.py`).
-2.  Place the script in the **same directory** as your input Excel file (`job_sites.xlsx`).
+2.  Place the script in the same directory as your input Excel file (`job_sites.xlsx`).
 3.  Make sure the output Excel file (`found_jobs.xlsx`) either doesn't exist yet or is in the same directory (the script will create / overwrite it).
 4.  Open your terminal or command prompt, navigate (`cd`) to that directory.
 5.  Run the script:
